@@ -1,12 +1,73 @@
 description = "Default layout"
 default = true
 ==
-{% partial "site/header" %}
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-color-scheme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <meta name="robots" content="noindex">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="backend-base-path" content="/backend">
+        <meta name="csrf-token" content="Bc0abaL5ZpRhcerk1PjHPtd3BTghAPVZ7V7nEwHC">
+        {% partial "meta/seo" %}
+        <script data-cfasync="false" src="https://pantryportal.com/modules/backend/assets/js/vendor/jquery.min.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/backend/assets/js/vendor/jquery.min.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/backend/assets/js/vendor/jquery-migrate.min.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/backend/assets/js/vendor/jquery-migrate.min.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/system/assets/js/framework.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/system/assets/js/framework.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/system/assets/js/framework.extras.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/system/assets/js/framework.extras.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/system/assets/ui/storm-min.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/system/assets/ui/storm-min.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/backend/assets/js/winter-min.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/backend/assets/js/winter-min.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/backend/assets/js/auth/auth.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/backend/assets/js/auth/auth.js?v=1.2.4" rel="preload" as="script" importance="high">
+        <script data-cfasync="false" src="https://pantryportal.com/modules/system/assets/js/lang/lang.en.js?v=1.2.4" importance="high"></script>
+        <link href="https://pantryportal.com/modules/system/assets/js/lang/lang.en.js?v=1.2.4" rel="preload" as="script" importance="high">
 
-    {% partial "site/nav" %}
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="stylesheet" href="https://pantryportal.com/plugins/winter/tailwindui/assets/css/dist/backend.css">
+        <link rel="stylesheet" href="https://pantryportal.com/plugins/winter/tailwindui/assets/css/dist/backend.css?1701372900">
+        <link rel="stylesheet" href="https://pantryportal.com/plugins/winter/sso/assets/dist/css/sso.css?v1.0.0">
+        <link rel="stylesheet" href="https://pantryportal.com/modules/system/assets/css/framework.extras.css">
+        <style>
+            :root {
+                --primary: #13C3A6;
+                --primary-dark: #0e957e;
+                --primary-darker: #0a6657;
+                --primary-darkest: #05332b;
+                --primary-light: #32ebcd;
+                --primary-lighter: #78f2de;
+                --primary-lightest: #b9f8ee;
+                --secondary: #E57E1B;
+                --secondary-dark: #af6014;
+                --secondary-darker: #733f0d;
+                --secondary-darkest: #3c2107;
+                --secondary-light: #eb9d52;
+                --secondary-lighter: #f2bc89;
+                --secondary-lightest: #f8dec4;
+            }
+        </style>
+        <style>
+                .br-p{color:#13c3a6}.br-s{color:#e57e1b}.br-a{color:#3498db}.br-p-s10{color:#08cead}.br-s-s10{color:#f27e0e}.br-a-s10{color:#289ae7}.br-p-s20{color:#00d6b3}.br-s-s20{color:#fe7d02}.br-a-s20{color:#1c9df3}.bg-p{background-color:#13c3a6}.bg-s{background-color:#e57e1b}.bg-a{background-color:#3498db}.bg-p-s10{background-color:#08cead}.bg-s-s10{background-color:#f27e0e}.bg-a-s10{background-color:#289ae7}.bg-p-s20{background-color:#00d6b3}.bg-s-s20{background-color:#fe7d02}.bg-a-s20{background-color:#1c9df3}.sidenav-tree ul.top-level>li>div.group:before{border-top-color:#13c3a6}.sidenav-tree ul.top-level>li>ul li.active{border-color:#e57e1b}#layout-side-panel .sidepanel-content-header{background:#bf5e01}#layout-side-panel .sidepanel-content-header::after{border-top-color:#bf5e01}.control-assetlist ul li.active a:after,.control-assetlist ul li.active a.link:after{background:#e57e1b}.control-treeview ol>li.active>div::after{background:#e57e1b}body.outer{background:#0caa90}.wn-logo-transparent{background-image:url('https://pantryportal.com/storage/app/uploads/public/65b/e7d/6f8/65be7d6f81c98425918298.png') !important}.wn-logo{background-image:url('https://pantryportal.com/storage/app/uploads/public/65b/e7d/6f8/65be7d6f81c98425918298.png')}.oc-logo-transparent{background-image:url('https://pantryportal.com/storage/app/uploads/public/65b/e7d/6f8/65be7d6f81c98425918298.png') !important}.oc-logo{background-image:url('https://pantryportal.com/storage/app/uploads/public/65b/e7d/6f8/65be7d6f81c98425918298.png')}table.table.data tbody tr.active td:first-child{border-left:3px solid #e57e1b}.fancy-layout *:not(.nested-form)>.form-widget>.layout-row>.form-tabless-fields{background:#e57e1b}.fancy-layout *:not(.nested-form)>.form-widget>.layout-row>.form-tabless-fields .loading-indicator-container .loading-indicator{background:#e57e1b}body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container>ul.nav-tabs>li.active a>span.title,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container>ul.nav-tabs>li.active a>span.title,body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container>ul.nav-tabs>li.active a>span.title:before,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container>ul.nav-tabs>li.active a>span.title:before,body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container>ul.nav-tabs>li.active a>span.title:after,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container>ul.nav-tabs>li.active a>span.title:after{background:#e57e1b}body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container>ul.nav-tabs>li a>span.title,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container>ul.nav-tabs>li a>span.title,body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container>ul.nav-tabs>li a>span.title:before,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container>ul.nav-tabs>li a>span.title:before,body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container>ul.nav-tabs>li a>span.title:after,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container>ul.nav-tabs>li a>span.title:after{background-color:#b05701}body.fancy-layout .master-tabs.control-tabs>div>div.tabs-container,.master-tabs.control-tabs.fancy-layout>div>div.tabs-container{background:#bf5e01}.fancy-layout *:not(.nested-form)>.form-widget>.layout-row>.control-tabs.primary-tabs.master-area>div>ul.nav-tabs,*:not(.nested-form)>.form-widget>.layout-row>.control-tabs.fancy-layout.primary-tabs.master-area>div>ul.nav-tabs{background:#e57e1b}.fancy-layout *:not(.nested-form)>.form-widget>.layout-row>.control-tabs.secondary-tabs.secondary-content-tabs.primary-collapsed>div>ul.nav-tabs{background:#e57e1b}.control-filelist ul li.active>a:after{background:#e57e1b}div.control-componentlist.droppable{background-color:#efb277}.stripe-loading-indicator .stripe,.stripe-loading-indicator .stripe-loaded{background:#3498db}.control-balloon-selector ul li.active{background:#e57e1b !important}.nav.selector-group li.active{border-left-color:#e57e1b}body.breadcrumb-fancy .control-breadcrumb,.control-breadcrumb.breadcrumb-fancy{background-color:#d66901}body.breadcrumb-fancy .control-breadcrumb li,.control-breadcrumb.breadcrumb-fancy li{background-color:#b05701}body.breadcrumb-fancy .control-breadcrumb li:last-child,.control-breadcrumb.breadcrumb-fancy li:last-child{background-color:#d66901}body.breadcrumb-fancy .control-breadcrumb li:last-child::before,.control-breadcrumb.breadcrumb-fancy li:last-child::before{border-left-color:#d66901}body.breadcrumb-fancy .control-breadcrumb li::after,.control-breadcrumb.breadcrumb-fancy li::after{border-left-color:#b05701}body.breadcrumb-fancy .control-breadcrumb li:not(:last-child)::before,.control-breadcrumb.breadcrumb-fancy li:not(:last-child)::before{border-left-color:#e57e1b}
+        </style>
+    </head>
 
-    <div style="padding: 4em;">
+    <body class="outer signin preload font-sans m-0">
+
         {% page %}
-    </div>
 
-{% partial "site/footer" %}
+        <!-- Flash Messages -->
+        <style>
+            div#layout-flash-messages + div {
+                display: none;
+            }
+        </style>
+        <div id="layout-flash-messages"></div>
+
+        {# {% partial "site/site-footer" %} #}
+    </body>
+</html>

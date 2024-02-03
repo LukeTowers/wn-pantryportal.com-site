@@ -1,5 +1,5 @@
-title = "Login"
-url = "/account/login"
+title = "Sign Up"
+url = "/account/signup"
 layout = "account"
 is_hidden = 0
 
@@ -12,8 +12,8 @@ redirect = '/'
 [session]
 security = "all"
 ==
-{# {% component 'account' %}
-<p>Lost your password? <a href="/account/reset">Click here to reset it</a>.</p> #}
+{# {% component 'account' %} #}
+
 <div class="min-h-screen bg-white dark:bg-gray-800 flex">
     <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div class="mx-auto w-full max-w-sm lg:w-96">
@@ -26,14 +26,27 @@ security = "all"
                 <div class="mt-6">
                     <!-- Split   -->
                     <form method="POST" action="https://pantryportal.com/backend/backend/auth/signin" accept-charset="UTF-8" class="space-y-6"><input name="_session_key" type="hidden" value="S5hCmdWFFwqKNNpRWP83AUc94B5q4Jsb0G6avyjU"><input name="_token" type="hidden" value="Bc0abaL5ZpRhcerk1PjHPtd3BTghAPVZ7V7nEwHC">    <input type="hidden" name="postback" value="1" />
-                        <!-- Login -->
+                        <!-- Name -->
                         <div>
-                            <label for="login">Login</label>
+                            <label for="name">Name</label>
                             <div class="mt-1 relative">
                                 <input
                                     type="text"
-                                    id="login"
-                                    name="login"
+                                    id="name"
+                                    name="name"
+                                    value=""
+                                    required
+                                    maxlength="255" />
+                            </div>
+                        </div>
+                        <!-- Login -->
+                        <div>
+                            <label for="email">Email</label>
+                            <div class="mt-1 relative">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
                                     value=""
                                     required
                                     maxlength="255" />
@@ -67,20 +80,9 @@ security = "all"
                             </div>
                         </div>
 
-                        <div class="flex items-center justify-between">
-                            <!-- Remember checkbox -->
-
-                            <!-- Forgot your password? -->
-                            <div class="text-sm">
-                                <a href="{{ 'account/reset' | page }}" class="font-medium text-primary hover:text-primary-dark">
-                                    Forgot your password?
-                                </a>
-                            </div>
-                        </div>
-
                         <!-- Submit Login -->
                         <div>
-                            <button type="submit" class="btn btn-primary w-full">Login</button>
+                            <button type="submit" class="btn btn-primary w-full">Sign Up!</button>
                         </div>
                     </form>
                 </div>
