@@ -8,9 +8,6 @@ paramCode = "code"
 forceSecure = 0
 requirePassword = 0
 redirect = '/'
-
-[session]
-security = "all"
 ==
 {# {% component 'account' %}
 <p>Lost your password? <a href="/account/reset">Click here to reset it</a>.</p> #}
@@ -25,7 +22,7 @@ security = "all"
             <div class="mt-8">
                 <div class="mt-6">
                     <!-- Split   -->
-                    <form method="POST" action="https://pantryportal.com/backend/backend/auth/signin" accept-charset="UTF-8" class="space-y-6"><input name="_session_key" type="hidden" value="S5hCmdWFFwqKNNpRWP83AUc94B5q4Jsb0G6avyjU"><input name="_token" type="hidden" value="Bc0abaL5ZpRhcerk1PjHPtd3BTghAPVZ7V7nEwHC">    <input type="hidden" name="postback" value="1" />
+                    {{ form_ajax('onSignin', {class: 'space-y-6'}) }}
                         <!-- Login -->
                         <div>
                             <label for="login">Email</label>
@@ -82,7 +79,7 @@ security = "all"
                         <div>
                             <button type="submit" class="btn btn-primary w-full">Login</button>
                         </div>
-                    </form>
+                    {{ form_close() }}
                 </div>
             </div>
         </div>

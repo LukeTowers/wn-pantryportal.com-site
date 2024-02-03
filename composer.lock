@@ -13569,12 +13569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wintercms/wn-user-plugin.git",
-                "reference": "ef05e340131fc9c6d00458746edef656396429a7"
+                "reference": "9c1798b8545b0363dec4c33b2e03a8d46fc805b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wintercms/wn-user-plugin/zipball/ef05e340131fc9c6d00458746edef656396429a7",
-                "reference": "ef05e340131fc9c6d00458746edef656396429a7",
+                "url": "https://api.github.com/repos/wintercms/wn-user-plugin/zipball/9c1798b8545b0363dec4c33b2e03a8d46fc805b5",
+                "reference": "9c1798b8545b0363dec4c33b2e03a8d46fc805b5",
                 "shasum": ""
             },
             "require": {
@@ -13634,7 +13634,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-12-18T21:23:40+00:00"
+            "time": "2024-02-03T20:10:48+00:00"
         },
         {
             "name": "winter/wn-userplus-plugin",

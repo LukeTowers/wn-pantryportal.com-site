@@ -1,5 +1,8 @@
 description = "Default layout"
 default = true
+
+[session]
+security = "all"
 ==
 <!DOCTYPE html>
 <html lang="en" class="no-js" data-color-scheme="light">
@@ -35,6 +38,8 @@ default = true
         <link rel="stylesheet" href="/plugins/winter/tailwindui/assets/css/dist/backend.css?1701372900">
         <link rel="stylesheet" href="/plugins/winter/sso/assets/dist/css/sso.css?v1.0.0">
         <link rel="stylesheet" href="/modules/system/assets/css/framework.extras.css">
+        {# @TODO: Breaks my local for some reason - Luke #}
+        {# <link rel="stylesheet" href="{{ ['assets/src/less/theme.less'] | theme }}"> #}
         <style>
             :root {
                 --primary: #13C3A6;
@@ -62,13 +67,13 @@ default = true
 
         {% page %}
 
-        <!-- Flash Messages -->
+        {# <!-- Flash Messages -->
         <style>
             div#layout-flash-messages + div {
                 display: none;
             }
         </style>
-        <div id="layout-flash-messages"></div>
+        <div id="layout-flash-messages"></div> #}
 
         {# {% partial "site/site-footer" %} #}
     </body>

@@ -18,8 +18,12 @@
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
 
-            <a href="{{ 'account/login' | page }}" class="text-sm font-semibold leading-6 text-gray-900">Log in</a>
-            <a href="{{ 'account/signup' | page }}" class="text-sm font-semibold leading-6 text-gray-900 button">Sign up <span aria-hidden="true">&rarr;</span></a>
+            {% if user %}
+                <a href="javascript:;" data-request="onLogout" class="text-sm font-semibold leading-6 text-gray-900">Log out</a>
+            {% else %}
+                <a href="{{ 'account/login' | page }}" class="text-sm font-semibold leading-6 text-gray-900">Log in</a>
+                <a href="{{ 'account/signup' | page }}" class="text-sm font-semibold leading-6 text-gray-900 button">Sign up <span aria-hidden="true">&rarr;</span></a>
+            {% endif %}
         </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
