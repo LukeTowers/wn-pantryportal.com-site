@@ -41,3 +41,4 @@ public
 # Ignore themes loaded from composer
 /themes/workshop
 mix.webpack.js
+plugins/offline/mall

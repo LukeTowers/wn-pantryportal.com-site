@@ -59,7 +59,8 @@
         "winter/wn-twitter-plugin": "dev-main",
         "winter/wn-user-plugin": "dev-main",
         "winter/wn-userplus-plugin": "dev-main",
-        "winter/wn-vapor-plugin": "dev-main"
+        "winter/wn-vapor-plugin": "dev-main",
+        "offline/oc-mall-plugin": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5.8",
