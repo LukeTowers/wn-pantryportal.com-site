@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db2f4eafc45026c841ca62eec537b4fd",
+    "content-hash": "81600dd643e186a4f25d70c7327c429e",
     "packages": [
         {
             "name": "assetic/framework",
@@ -10648,64 +10648,6 @@
             "time": "2024-01-10T05:07:25+00:00"
         },
         {
-            "name": "winter/wn-blocks-plugin",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wintercms/wn-blocks-plugin.git",
-                "reference": "06f479c2c5bc173f2dc4f491ab691d79ab46852b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wintercms/wn-blocks-plugin/zipball/06f479c2c5bc173f2dc4f491ab691d79ab46852b",
-                "reference": "06f479c2c5bc173f2dc4f491ab691d79ab46852b",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "winter-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luke Towers",
-                    "email": "wintercms@luketowers.ca"
-                },
-                {
-                    "name": "Winter CMS Maintainers",
-                    "homepage": "https://wintercms.com",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Block based content management plugin for Winter CMS.",
-            "homepage": "https://github.com/wintercms/wn-blocks-plugin",
-            "keywords": [
-                "block",
-                "blocks",
-                "builder",
-                "laravel",
-                "winter",
-                "wintercms"
-            ],
-            "support": {
-                "discord": "https://discord.gg/D5MFSPH6Ux",
-                "issues": "https://github.com/wintercms/wn-blocks-plugin/issues",
-                "source": "https://github.com/wintercms/wn-blocks-plugin"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/wintercms",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/wintercms",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2023-10-06T22:55:28+00:00"
-        },
-        {
             "name": "winter/wn-blog-plugin",
             "version": "dev-main",
             "source": {
@@ -16794,7 +16736,6 @@
         "winter/wn-backend-module": 20,
         "winter/wn-cms-module": 20,
         "winter/wn-workshop-theme": 20,
-        "winter/wn-blocks-plugin": 20,
         "winter/wn-blog-plugin": 20,
         "winter/wn-ckeditor-plugin": 20,
         "winter/wn-cloudflare-plugin": 20,
