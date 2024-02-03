@@ -28,6 +28,13 @@ composer install --no-dev
 echo "Discovering packages"
 php artisan package:discover
 
+# Install node modules
+echo "Installing dependencies from package-lock.json"
+npm ci
+
+echo "Compiling theme assets"
+php artisan mix:compile -p theme-blizzard --production
+
 # Enable maintenance mode
 echo "Enabling maintenance mode"
 php artisan down
