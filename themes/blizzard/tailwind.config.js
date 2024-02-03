@@ -9,6 +9,12 @@ module.exports = {
             colors: {
                 primary: 'var(--primary)',
                 secondary: 'var(--secondary)',
+                orange: {
+                    DEFAULT: '#EF892A',
+                    light: '#F5A962',
+                    dark: '#E57E1A',
+                },
+                teal: '#11C3A6',
                 navy: {
                     darker: '#051016',
                     dark: '#081821',

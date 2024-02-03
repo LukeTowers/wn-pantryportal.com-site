@@ -1,7 +1,7 @@
 .button {
-    @apply relative bg-blue py-3 px-4 rounded-md text-white no-underline inline-block transform transition cursor-pointer text-opacity-100;
-    @apply hover:bg-blue-dark focus:bg-blue-dark active:scale-90;
-    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-light;
+    @apply relative bg-orange py-3 px-4 rounded-md text-white no-underline inline-block transform transition cursor-pointer text-opacity-100;
+    @apply hover:bg-orange-dark focus:bg-orange-dark active:scale-90;
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-light;
 
     &::after {
         content: '';
@@ -24,10 +24,10 @@
 
     &.bordered,
     &.button-outlined {
-        @apply border border-blue bg-transparent text-blue;
+        @apply border border-orange bg-transparent text-orange;
 
         &:hover {
-            @apply border-blue-dark text-blue-dark;
+            @apply border-orange-dark text-orange-dark;
         }
     }
 
