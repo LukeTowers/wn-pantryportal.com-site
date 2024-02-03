@@ -1,3 +1,51 @@
+        <footer class="site-footer section-padding">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <h4 class="text-white mb-4 me-5">Pantry Portal</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                        <h6 class="text-white mb-lg-4 mb-3">Location</h6>
+
+                        <p>2375 College Ave, Regina, SK S4P 0S8</p>
+
+                        <a href="https://www.google.com/maps/place/Darke+Hall/@50.4399006,-104.6127225,19.51z/data=!4m7!3m6!1s0x531c1e3c3324fa17:0xbbfdd19725c4abae!4b1!8m2!3d50.439895!4d-104.6122785!16s%2Fg%2F1ywqfkj7t?entry=ttu" class="custom-btn btn btn-dark mt-2">Directions</a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                        <h6 class="text-white mb-lg-4 mb-3">Delivery Timings</h6>
+
+                        <p class="mb-2">Sunday</p>
+
+                        <p>10:00 AM - 08:00 PM</p>
+
+                        <p>Tel: <a href="tel: 010-02-0340" class="tel-link">010-02-0340</a></p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                        <h6 class="text-white mb-lg-4 mb-3">Social</h6>
+
+                        <ul class="social-icon">
+                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank"
+                                 class="social-icon-link bi-twitter"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                        </ul>
+
+                        <p class="copyright-text tooplate-mt60">Copyright &copy; {{ 'now' | date('Y') }} PantryPortal.com.
+                    </div>
+                </div><!-- row ending -->
+             </div><!-- container ending -->
+        </footer>
+
         <!-- Scripts -->
 
         {# jQuery AJAX Framework #}
@@ -9,6 +57,8 @@
 
         {# Mix extracted assets #}
         <script src="{{ 'assets/dist/js/theme.js' | theme }}"></script>
+
+        {% partial "meta/vendor-scripts" %}
 
         {% scripts %}
 

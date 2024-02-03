@@ -1,0 +1,15 @@
+title = "User Login"
+url = "/account/login"
+layout = "account"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+redirect = '/'
+
+[session]
+security = "all"
+==
+{% component 'account' %}
