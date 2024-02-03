@@ -6,6 +6,34 @@ layout = "default"
 ==
 <div class="bg-[#f2f2f2]">
     <div class="container mx-auto max-w-[80%]">
-        {% component 'products' %}
+        <div class="py-8 px-2 bg-gray-100">
+            <ul role="list" class="flex flex-row flex-wrap">
+                {% for item in items %}
+                    <li class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 pb-8 mx-auto">
+                        <a href="{{ productPage|page({slug: item.slug, variant: item.variantHashId}) }}" data-mall-item-id="{{ item.prefixedId }}">
+                            <div class="divide-y divide-gray-200 rounded-lg flex flex-col bg-white text-center h-full shadow-md">
+                                <div class="flex flex-1 flex-col p-8 pb-4">
+                                    <img
+                                        class="mx-auto w-full h-auto flex-shrink-0 bg-contain bg-no-repeat bg-center"
+                                        {# src="{{ item.image.thumb('auto', 240) }}" #}
+                                        alt="Product image for {{ item.name }}"
+                                        style="background-image: url('{{ item.image.thumb('auto', 240) }}'"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAQGU/a4AAAAKSURBVHgBY2gAAACCAIFMF9ffAAAAAElFTkSuQmCC"
+                                    >
+                                    <h3 class="mt-6 text-sm font-medium text-gray-900">
+                                        {{ item.name }}
+                                    </h3>
+                                    <span class="inline-flex text-center items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-700 ring-1 ring-inset ring-yellow-600/20">
+                                        {{ item.price().string | raw }}
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {# {% component 'products' %} #}
     </div>
 </div>
