@@ -1,8 +1,21 @@
-title = "Error page (500)"
+title = "Something went wrong (500)"
 url = "/error"
-layout = "default"
+layout = "error"
 ==
-<div>
-    <h1>Error</h1>
-    <p>We're sorry, but something went wrong and the page cannot be displayed.</p>
+<div class="w-full h-full bg-navy-dark">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-navy w-80 md:w-96 lg:w-1/2 2xl:w-1/3 rounded-2xl text-center flex flex-col gap-8 p-8 text-white">
+        <div class="h-10 lg:h-32">
+            <img alt="Humorous cartoon image of beaver engineers looking panicked as their dam begins to collapse" src="{{ 'assets/src/images/500.png' | theme | resize(300, 300, { extension: 'jpg', mode: 'crop', quality: 88 }) }}" class="absolute rounded-full w-40 h-40 lg:w-60 lg:h-60 -top-20 lg:-top-30 left-1/2 -translate-x-1/2 border-8 border-navy-dark">
+        </div>
+
+        <h2 class="heading-2 text-blue-light">Whoops - Error 500</h2>
+
+        <p>Something seems to have gone wrong. Please wait while we fix it.</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <a href="javascript:;" onclick="history.go(-1); return false;" class="button button-block">Go back to previous page</a>
+            <a href="javascript:;" onclick="location.reload();" class="button button-block">Try to refresh the page</a>
+            <a href="javascript:;" onclick="window.location='mailto:pantry@luketowers.ca?subject=Error on pantryportal.com. Page: '+window.location.href;" class="button bordered button-block col-span-2">Get in touch with the team</a>
+        </div>
+    </div>
 </div>

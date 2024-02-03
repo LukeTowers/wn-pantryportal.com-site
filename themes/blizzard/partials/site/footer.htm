@@ -46,26 +46,4 @@
              </div><!-- container ending -->
         </footer>
 
-        <!-- Scripts -->
-
-        {# jQuery AJAX Framework #}
-        <script src="{{ [
-            '@jquery',
-            '@framework',
-            '@framework.extras',
-        ] | theme }}"></script>
-
-        {# Mix extracted assets #}
-        <script src="{{ 'assets/dist/js/theme.js' | theme }}"></script>
-
-        {% partial "meta/vendor-scripts" %}
-
-        {% scripts %}
-
-        {% flash %}
-            <p data-control="flash-message" data-interval="7" class="flashmessage {{ type }}">
-                {{ message }}
-            </p>
-        {% endflash %}
-    </body>
-</html>
+        {% partial "site/site-footer" %}
