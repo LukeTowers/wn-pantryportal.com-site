@@ -1,0 +1,9 @@
+title = "Password Reset"
+url = "/account/reset/:code?"
+layout = "account"
+is_hidden = 0
+
+[resetPassword]
+paramCode = "code"
+==
+{% component 'resetPassword' %}

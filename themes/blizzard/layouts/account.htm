@@ -1,0 +1,12 @@
+description = "Default layout"
+default = true
+==
+{% partial "site/header" %}
+
+    {% partial "site/nav" %}
+
+    <div style="padding: 4em;">
+        {% page %}
+    </div>
+
+{% partial "site/footer" %}
